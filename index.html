@@ -21,22 +21,27 @@
   </nav>
   <main>
     <img src="./images/5917.jpg">
-    <div class="main-div">
+    <form action="./succesful.html" method="GET" class="main-div">
       <h1>Send <span>airtime</span> to your loved ones at a quicker rate</h1>
       <div class="info">
         <i class="fa fa-phone"></i>
-        <input type="text" placeholder="Phone number">
+        <input type="number" required placeholder="Phone number">
       </div>
       <div class="info">
         <i class="fa fa-signal"></i>
-        <input type="text" placeholder="Network provider">
+        <select required name="Network provider">
+          <option value="Mtn">Mtn</option>
+          <option value="9mobile">9mobile</option>
+          <option value="Glo">Glo</option>
+          <option value="Airtel">Airtel</option>
+         </select>
       </div>
       <div class="info">
         <i class="fa fa-dollar"></i>
-        <input type="text" placeholder="Amount">
+        <input required type="text" placeholder="Amount">
       </div>
       <button id="send">Send</button>
-    </div>
+    </form>
   </main>
 </body>
 </html>

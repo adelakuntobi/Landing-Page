@@ -1,0 +1,27 @@
+body{
+  background-color: #eaf3fa;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+div{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+button{
+  background-color: #00aeff;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 17%;
+  border:  none;
+  outline: none;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
