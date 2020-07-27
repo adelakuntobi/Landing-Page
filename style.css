@@ -4,11 +4,12 @@ body{
   margin: 0;
   background-color: #eaf3fa;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 h1{
   font-family: 'Oxygen', sans-serif;
-  font-size: 8vh;
+  font-size: 4vw;
 }
 span{
   color: #00aeff;
@@ -48,11 +49,14 @@ nav ul li{
   padding: 5px 15px;
   padding-right: 5px;
   margin: 15px 10px;
+  display: flex;
+  border: 0;
+  overflow: hidden;
 }
 .info:focus-within{
   box-shadow: 0 0 10px 6px #0000001a;
   outline: none;
-  /* border: 1px solid gray; */
+  /* border: 1px solid white; */
 }
 .info input,select{
   padding: 5px 0;
@@ -61,21 +65,27 @@ nav ul li{
   outline: none;
   width: 90%;
 }
+
 .fa{
   padding-right: 3px;
+  margin: auto;
 }
 main{
   display: flex;
-  padding-right: 8%;
+  padding-right: 6%;
+  overflow: hidden;
 }
 main img{
   width: 70%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .main-div{
   margin: auto;
   margin-left: 10px;
   width: 45%;
+}
+form{
+  overflow: hidden;
 }
 #send{
   background-color: #00aeff;
@@ -89,6 +99,19 @@ main img{
   color: white;
   cursor: pointer;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  overflow-x: hidden;
+}
+
 @media(max-width: 600px){
   .main-div{
     margin-left: auto;
@@ -108,11 +131,14 @@ main img{
     display: block;
     padding: 0;
   }
+  h1{
+    font-size: 3rem;
+  }
   main img{
     width: 100%;
   }
   .main-div{
     margin-left: auto;
-    
+    width: 90%;
   }
 }
